@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="flex">
+    <div class="menu-logo-group flex">
+      <a href="#" class="toggler" id="navbar-toggler" data-bs-target="#menu" aria-controls="menu"><img
+          src="images/icon-menu.svg" alt="menu"></a>
+
+      <img src="images/logo.svg" alt="Sneakers">
+
+      <nav class="menu hide">
+        <div class="slideScreen">
+          <ul class="flex">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="flex btn">
+      <div class="cart-btn">
+        <button><img src="images/icon-cart.svg" alt="shopping-cart"></button>
+        <div class="cart-count hide">1</div>
+      </div>
+      <button><img class="avatar" src="images/image-avatar.png" alt="avatar"></button>
+    </div>
+
+    <div class="cart hide">
+      <div class="cart-header">Cart</div>
+      <div class="cart-content">
+        <!-- Products in the cart show here -->
+      </div>
+      <div class="message-empty">Your cart is empty.</div>
+      <div class="checkout hide">Checkout</div>
+    </div>
+
+  </header>
+
+  <main class="flex">
+
+    <!-- lightbox -->
+    <section class="lightbox">
+      <img class="product-hero" src="images/image-product-1.jpg" alt="image-product-1">
+      <div class="previous arrow flex">
+        <img src="images/icon-previous.svg" alt="previous">
+      </div>
+      <div class="next arrow flex">
+        <img src="images/icon-next.svg" alt="next">
+      </div>
+
+      <div id="thumbnails" class="flex">
+        <div class="pic active">
+          <img src="images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail">
+        </div>
+        <div class="pic">
+          <img src="images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail">
+        </div>
+        <div class="pic">
+          <img src="images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail">
+        </div>
+        <div class="pic">
+          <img src="images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail">
+        </div>
+      </div>
+    </section>
+
+    <!-- Product -->
+    <section class="product">
+      <p class="brand">Sneaker Company</p>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p class="desc">These low-profile sneakers are your perfect casual wear companion. Featuring a durable
+        rubber outer sole,
+        they'll withstand everything the weather can offer.</p>
+      <div class="price-wrapper">
+        <p class="price">$125.00 <span class="discount">50%</span></p>
+        <p class="original-price">$250.00</p>
+      </div>
+      <div class="flex add-to-cart">
+        <div class="flex counter-btn">
+          <button><img src="images/icon-minus.svg" alt="minus" id="btn-minus"></button>
+          <div class="counter">0</div>
+          <button><img src="images/icon-plus.svg" alt="plus" id="btn-plus"></button>
+        </div>
+        <button type="submit" class="flex atc"><img src="images/icon-cart.svg" alt="cart">Add to cart</button>
+      </div>
+    </section>
+
+    <div class="flex overlay hide">
+      <div class="btnClose">
+        <img id="btnLightboxClose" src="images/icon-close.svg" alt="lightbox-close">
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>
