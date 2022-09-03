@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/NischalJoshi19/Projects/tree/main/ecommerce-product-page-main](https://github.com/NischalJoshi19/Projects/tree/main/ecommerce-product-page-main)
+- Solution URL: [https://github.com/NischalJoshi19/ecommerce-product-page-main](https://github.com/NischalJoshi19/ecommerce-product-page-main)
 - Live Site URL: (https://your-live-site-url.com)
 
 ## My process
